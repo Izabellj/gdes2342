@@ -1,0 +1,238 @@
+body {
+    background-color: white;
+    font-family: Roboto, Helvetica, sans-serif;
+}
+
+.container {
+    width: 1180px;
+    height: 1050px;
+    background-color: white;
+    position: relative;
+}
+
+.logorectangle {
+    position: fixed;
+    width: 1180px;
+    height: 181px;
+    left: 0;
+    top: 0;
+    background-color: rgba(23, 177, 197, 0.33);
+
+}
+
+.copyright {
+    position: fixed;
+    bottom: 5px;
+    width: 224px;
+    height: 30px;
+    /*background-color: yellow;*/
+    left: 18px;
+
+    font-family: Roboto, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: transparent;
+    background-color: transparent;
+    position: fixed;
+    top: 129px;
+    left: 267px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: transparent;
+    color: white;
+    float: left;
+    border: none;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    cursor: pointer;
+    padding: 15px 30px;
+    transition: 0.3s;
+    font-size: 17px;
+    font-family: Roboto, Helvetica, sans-serif;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: white;
+    color: black;
+    font-family: Roboto, Helvetica, sans-serif;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: white;
+    color: black;
+    font-family: Roboto, Helvetica, sans-serif;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    position: fixed;
+    top: 185px;
+    padding: 6px 30px;
+    color: black;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 8px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 30s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* Container holding the amenities image */
+.amenitiescontainer {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.fa {
+    padding: 25px;
+    font-size: 60px;
+    width: 65px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: black;
+    color: white;
+}
+
+.phoneicon {
+    position: fixed;
+    width: 60px;
+    height: 105px;
+    padding: 5px;
+    left: 135px;
+
+}
+
+.phonenumber{
+    position: fixed;
+    left: 107px;
+    top: 350px;
+}
